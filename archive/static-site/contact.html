@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; sign up — Paws2Doors</title>
+  <meta name="description" content="Get in touch or sign up for dog walking and pet services. Widnes, Rainhill and surrounding areas. Inquiries and new clients welcome.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="site-title"><a href="index.html"><img src="images/logo.png" alt="Paws2Doors logo" class="logo-img" width="40" height="40">Paws2Doors</a></h1>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact &amp; sign up</a></li>
+          <li><a href="login.html">Owner login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contact &amp; sign up</h1>
+    <p>Interested in joining the Paws2Doors family or have a question? Send us a message and we'll get back to you.</p>
+
+    <!-- Replace action with your form endpoint: sign up at formspree.io and use your form URL (e.g. https://formspree.io/f/xxxxx) -->
+    <form class="section" action="#" method="post" style="max-width: var(--content-narrow);">
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+          <option value="signup">Sign up / new client</option>
+          <option value="inquiry">General inquiry</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Tell us about your dog and what you're looking for…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
+
+    <p class="form-group">You can also reach us on <a href="https://www.instagram.com/">Instagram</a> or <a href="https://www.facebook.com/">Facebook</a> if you prefer.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; Paws2Doors. Welcoming all paws through our doors.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

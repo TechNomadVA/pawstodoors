@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --colour-bg: #faf8f5;
+    --colour-bg-alt: #eef5ea;
+    --colour-surface: #ffffff;
+    --colour-text: #2c2a28;
+    --colour-text-muted: #5c5854;
+    --colour-accent: #557e44;
+    --colour-accent-hover: #466633;
+    --colour-accent-soft: #e8f0e4;
+    --colour-border: #d5e0cf;
+    --colour-link: #466633;
+    --colour-link-hover: #355026;
+    --colour-focus: #557e44;
+    --font-heading: "Cormorant Garamond", Georgia, serif;
+    --font-body: "DM Sans", system-ui, sans-serif;
+    --content-max: 60rem;
+    --content-narrow: 36rem;
+    --radius: 0.5rem;
+    --radius-lg: 0.75rem;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-[var(--colour-bg)] text-[var(--colour-text)] font-body antialiased;
+  }
+
+  a {
+    @apply text-[var(--colour-link)] underline-offset-2 hover:text-[var(--colour-link-hover)];
+  }
+
+  a:focus-visible {
+    @apply outline-2 outline-offset-2 outline-[var(--colour-focus)];
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-[var(--content-narrow)] px-4;
+  }
+
+  .container-wide {
+    @apply mx-auto w-full max-w-[var(--content-max)] px-4;
+  }
+}
